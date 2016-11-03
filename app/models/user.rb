@@ -4,6 +4,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+
+  has_many :pins
+
  validate :password_complexity
  def password_complexity
    if password.present?
@@ -12,5 +15,6 @@ class User < ApplicationRecord
       end
    end
  end
+
 
 end
