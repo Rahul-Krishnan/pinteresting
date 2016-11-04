@@ -13,6 +13,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass'
 gem 'devise', '~> 4.2'
 gem 'aws-sdk', '~> 2.6'
+gem 'masonry-rails', '~> 0.2.4'
 
 
 group :development, :test do
