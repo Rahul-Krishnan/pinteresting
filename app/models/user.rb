@@ -7,14 +7,16 @@ class User < ApplicationRecord
 
   has_many :pins
 
- validate :password_complexity
- def password_complexity
-   if password.present?
-      if !password.match(/^(?=.*[a-z])(?=.*[A-Z])/)
-        errors.add :password, "Password complexity requirement not met"
-      end
-   end
- end
+  validates :name, presence: true
+
+  validate :password_complexity
+  def password_complexity
+    if password.present?
+        if !password.match(/^(?=.*[a-z])(?=.*[A-Z])/)
+          errors.add :password, "Password complexity requirement not met"
+        end
+    end
+  end
 
 
 end

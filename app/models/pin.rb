@@ -5,4 +5,8 @@ class Pin < ApplicationRecord
   validates_attachment :image, presence: true,
   content_type: { content_type: ["image/jpeg", "image/gif", "image/png"] },
   size: { in: 0..10000.kilobytes }
+
+  validates :description, presence: true
+  validates :image, presence: true
+  
 end
