@@ -1,6 +1,6 @@
 # Pinteresting
 
-Pinteresting is a web application built on Rails that allows you to add and edit images and displays all users' pins chronologically!
+Pinteresting is a web application built on Rails that allows you to add and edit images and displays all users' pins chronologically.
 
 ### Features
 
